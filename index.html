@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/fontawesome-iconpicker/3.2.0/js/fontawesome-iconpicker.min.js"
+      integrity="sha512-7dlzSK4Ulfm85ypS8/ya0xLf3NpXiML3s6HTLu4qDq7WiJWtLLyrXb9putdP3/1umwTmzIvhuu9EW7gHYSVtCQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link rel="stylesheet" href="scss/style.css" />
+    <title>UIC Market</title>
+  </head>
+  <body>
+    <header>
+      <!-- start modal -->
+
+      <!-- Modal toggle -->
+
+      <!-- Main modal -->
+      <div
+        id="defaultModal"
+        tabindex="-1"
+        aria-hidden="true"
+        class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full"
+      >
+        <div class="relative w-full max-w-2xl max-h-full modal rounded-lg">
+          <!-- Modal content -->
+          <div class="relative modal">
+            <!-- Modal header -->
+            <div
+              class="flex items-start justify-between p-4 border-b rounded-t dark:border-gray-600"
+            >
+              <h3 class="text-xl font-semibold text-white">Оставить заявку</h3>
+              <button
+                type="button"
+                class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ml-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
+                data-modal-hide="defaultModal"
+              >
+                <svg
+                  class="w-3 h-3"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 14 14"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"
+                  />
+                </svg>
+                <span class="sr-only">Close modal</span>
+              </button>
+            </div>
+            <!-- Modal body -->
+            <form class="p-4 modal-form">
+              <div class="name-input">
+                <label for="name">Ф.И.О.</label>
+                <input
+                  type="text"
+                  id="name"
+                  placeholder="Введите полное имя"
+                  required
+                />
+              </div>
+              <div class="name-input">
+                <label for="number">Номер телефона</label>
+                <input
+                  type="number"
+                  id="number"
+                  placeholder="+998 00-000-00-00"
+                  required
+                />
+              </div>
+              <div class="name-input">
+                <label for="email">Электронная почта</label>
+                <input
+                  type="email"
+                  id="email"
+                  placeholder="example@uic.group"
+                />
+              </div>
+              <button
+                data-modal-hide="defaultModal"
+                type="submit"
+                class="text-white modal-btn focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center"
+              >
+                Отправить
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <!-- end modal -->
+
+      <img
+        src="images/Grouplogo-stroke.svg"
+        class="logo-stroke"
+        alt="logo-stroke"
+      />
+      <div class="container">
+        <nav>
+          <a href="#"><img src="images/Group 2.svg" alt="uic-logo" /></a>
+          <div class="nav__link">
+            <a href="#">Маркет</a>
+            <a href="#">Цены</a>
+            <a href="tel:+998712007007">+998 71 <span>200 70 07</span></a>
+          </div>
+        </nav>
+        <div class="intro">
+          <h1>uic.market - готовые решения</h1>
+          <p>
+            Эти люди верили в философию компании и стремились внести свой вклад
+            в развитие проекта.
+          </p>
+          <div class="btn-group">
+            <button
+              data-modal-target="defaultModal"
+              data-modal-toggle="defaultModal"
+            >
+              Оставить заявку
+            </button>
+            <a href="tel:+998712007007">Позвонить</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="about">
+      <div class="container">
+        <div class="title">
+          <h2>Почему именно мы?</h2>
+          <p>
+            У вас будет возможность ознакомиться с товарами и увидеть их через
+            каталог товаров
+          </p>
+        </div>
+        <div class="content">
+          <div class="project">
+            <h2>Проекты под ключ</h2>
+            <p>
+              10 лет беспрерывного опыта амбициозной команды в разработке
+              веб-сайтов и приложений
+            </p>
+            <img src="images\Group 427318669.png" alt="korzinka" />
+          </div>
+          <div class="project-info">
+            <div class="info">
+              <h4>Проекты под ключ</h4>
+              <p>
+                Профессиональная подготовка 2D/3D анимации, презентации проекта
+              </p>
+            </div>
+            <div class="info">
+              <h4>Неповторимый UI&UX дизайн и брендинг</h4>
+              <p>Разработка интеллектуальной карты проекта, дизайн логотипа</p>
+            </div>
+            <div class="info">
+              <h4>Обеспечение кибербезопасности</h4>
+              <p>Поиск и устранение уязвимостей в сетях, кодах и данных</p>
+            </div>
+            <div class="info">
+              <h4>Передача быстрых решений</h4>
+              <p>Разработка интеллектуально-компьютерных систем</p>
+            </div>
+            <div class="btn-group">
+              <button>Оставить заявку</button>
+              <a href="tel:+998712007007">Позвонить</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="cards">
+      <div class="container">
+        <div class="card-group">
+          <div class="card-1 card">
+            <h2>Рекомендуемые продукты</h2>
+            <p>
+              Возможность предлагать другие хорошие продукты, похожие на
+              продукт, который клиент просматривает в данный момент.
+            </p>
+            <img src="images\2Group 427318670.png" alt="korzinka" />
+          </div>
+          <div class="card-2 card">
+            <h2>готовое seo</h2>
+            <p>Страницы интернет-магазина полностью индексируются</p>
+            <img src="images\3Group 427318670.png" alt="korzinka" />
+          </div>
+          <div class="card-3 card">
+            <h2>поддержка с очередью</h2>
+            <p>Возможность поддержки клиента через систему Ticket</p>
+            <img src="images\Group 427318670.png" alt="korzinka" />
+          </div>
+          <div class="card-4 card">
+            <h2>Купить продукт</h2>
+            <p class="phone">
+              Есть процесс оформления заказа путем добавления товара в корзину.
+              О покупках приходит уведомление в Telegram-бот. Операторы смогут
+              управлять покупками
+            </p>
+            <img
+              src="images\1iPhone 12 Pro (Wooden Hands).png"
+              alt="korzinka"
+            />
+          </div>
+          <div class="card-5 card bg-blue-500">
+            <h2>уведомления</h2>
+            <p>
+              10 лет беспрерывного опыта амбициозной команды в разработке
+              веб-сайтов и приложений
+            </p>
+            <img src="images\gGroup 427318670.png" alt="korzinka" />
+          </div>
+          <div class="card-6 card bg-gray-300">
+            <h2>оплата через карты/h2>
+            <p>
+              10 лет беспрерывного опыта амбициозной команды в разработке
+              веб-сайтов и приложений
+            </p>
+            <img src="images\Group 427318669.png" alt="korzinka" />
+          </div>
+          <div class="card-7 card bg-green-500">
+            <h2>Проекты под ключ</h2>
+            <p>
+              10 лет беспрерывного опыта амбициозной команды в разработке
+              веб-сайтов и приложений
+            </p>
+            <img src="images\Group 427318669.png" alt="korzinka" />
+          </div>
+          <div class="card-8 card bg-red-300">
+            <h2>Проекты под ключ</h2>
+            <p>
+              10 лет беспрерывного опыта амбициозной команды в разработке
+              веб-сайтов и приложений
+            </p>
+            <img src="images\Group 427318669.png" alt="korzinka" />
+          </div>
+          <div class="card-9 card bg-purple-300">
+            <h2>Проекты под ключ</h2>
+            <p>
+              10 лет беспрерывного опыта амбициозной команды в разработке
+              веб-сайтов и приложений
+            </p>
+            <img src="images\Group 427318669.png" alt="korzinka" />
+          </div>
+          <div class="card-10 card bg-blue-600">
+            <h2>Проекты под ключ</h2>
+            <p>
+              10 лет беспрерывного опыта амбициозной команды в разработке
+              веб-сайтов и приложений
+            </p>
+            <img src="images\Group 427318669.png" alt="korzinka" />
+          </div>
+          <div class="card-11 card bg-yellow-500">
+            <h2>Проекты под ключ</h2>
+            <p>
+              10 лет беспрерывного опыта амбициозной команды в разработке
+              веб-сайтов и приложений
+            </p>
+            <img src="images\Group 427318669.png" alt="korzinka" />
+          </div>
+          <div class="card-12 card bg-red-700">
+            <h2>Проекты под ключ</h2>
+            <p>
+              10 лет беспрерывного опыта амбициозной команды в разработке
+              веб-сайтов и приложений
+            </p>
+            <img src="images\Group 427318669.png" alt="korzinka" />
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
