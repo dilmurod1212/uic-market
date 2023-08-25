@@ -15,6 +15,10 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="scss/style.css" />
     <title>UIC Market</title>
   </head>
@@ -108,7 +112,10 @@
       <div class="container">
         <nav>
           <a href="#"><img src="images/Group 2.svg" alt="uic-logo" /></a>
+          <input type="checkbox" id="check" class="open" />
           <ul class="nav__link">
+            <label for="check" class="close"><i class="fas fa-x"></i></label>
+
             <li class="nav__link-item"><a href="#">Маркет</a></li>
             <li class="nav__link-item"><a href="#">Цены</a></li>
             <li class="nav__link-item">
@@ -127,6 +134,9 @@
               </select>
             </li>
           </ul>
+          <label for="check" class="menu"
+            ><i class="bx bx-menu-alt-left"></i
+          ></label>
         </nav>
         <div class="intro">
           <h1>uic.market - готовые решения</h1>

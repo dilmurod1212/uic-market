@@ -35,9 +35,6 @@ body {
 header {
   min-height: 100vh;
   position: relative;
-  background-image: url("imagesGroup 427318670.png");
-  background-position: center;
-  background-size: contain;
 }
 header .logo-stroke {
   position: absolute;
@@ -60,6 +57,11 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 20px 0;
+}
+nav .menu,
+nav .open,
+nav .close {
+  display: none;
 }
 nav .nav__link {
   display: flex;
@@ -576,12 +578,55 @@ nav .nav__link a:hover {
   }
   header {
     min-height: auto;
+    background-image: none;
+  }
+  header .shadow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    height: 100vh;
   }
   nav {
-    justify-content: center;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+  }
+  nav .menu {
+    display: block;
+    color: #fff;
+    cursor: pointer;
+  }
+  nav .menu i {
+    font-size: 28px;
   }
   nav .nav__link {
-    display: none;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    top: 0;
+    left: -100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100vh;
+    z-index: 99;
+    -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
+    transition: 0.3s;
+  }
+  nav .nav__link .close {
+    display: block;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    color: #fff;
+    cursor: pointer;
+  }
+  nav #check:checked ~ .nav__link {
+    left: 0;
   }
   .intro {
     width: 100%;
