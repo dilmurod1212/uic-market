@@ -190,9 +190,22 @@ nav {
 
   .content {
     display: flex;
+    justify-content: space-between;
     gap: 30px;
     margin: 50px 0;
+    .wrapper {
+      // width: 700px;
+      height: 100%;
+      overflow: hidden;
+    }
+    .projects {
+      display: flex;
+      transition: 0.3s;
+      height: 100%;
+    }
     .project {
+      // width: 100%;
+      height: 470px;
       position: relative;
       color: #fff;
       background-color: $extra-dark;
@@ -230,17 +243,21 @@ nav {
         border-radius: 20px;
         border: 1px solid #ffffffb4;
         color: #fff;
+
         p {
           font-size: 12px;
           font-weight: 300;
           margin-top: 12px;
         }
       }
-      .info:hover {
+      .active {
         border: 1px solid $uic-color;
       }
     }
   }
+}
+.active {
+  border: 1px solid $uic-color;
 }
 .title {
   color: #fff;

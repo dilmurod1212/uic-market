@@ -190,10 +190,21 @@ nav .nav__link a:hover {
 }
 .about .content {
   display: flex;
+  justify-content: space-between;
   gap: 30px;
   margin: 50px 0;
 }
+.about .content .wrapper {
+  height: 100%;
+  overflow: hidden;
+}
+.about .content .projects {
+  display: flex;
+  transition: 0.3s;
+  height: 100%;
+}
 .about .content .project {
+  height: 470px;
   position: relative;
   color: #fff;
   background-color: #19191b;
@@ -238,7 +249,11 @@ nav .nav__link a:hover {
   font-weight: 300;
   margin-top: 12px;
 }
-.about .content .project-info .info:hover {
+.about .content .project-info .active {
+  border: 1px solid #00a795;
+}
+
+.active {
   border: 1px solid #00a795;
 }
 
