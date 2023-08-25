@@ -8,12 +8,13 @@
       rel="stylesheet"
     />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/fontawesome-iconpicker/3.2.0/js/fontawesome-iconpicker.min.js"
-      integrity="sha512-7dlzSK4Ulfm85ypS8/ya0xLf3NpXiML3s6HTLu4qDq7WiJWtLLyrXb9putdP3/1umwTmzIvhuu9EW7gHYSVtCQ=="
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
-    ></script>
+    />
     <link rel="stylesheet" href="scss/style.css" />
     <title>UIC Market</title>
   </head>
@@ -21,19 +22,15 @@
     <header>
       <!-- start modal -->
 
-      <!-- Modal toggle -->
-
       <!-- Main modal -->
-      <div
+      <!-- <div
         id="defaultModal"
         tabindex="-1"
         aria-hidden="true"
         class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full"
       >
         <div class="relative w-full max-w-2xl max-h-full modal rounded-lg">
-          <!-- Modal content -->
           <div class="relative modal">
-            <!-- Modal header -->
             <div
               class="flex items-start justify-between p-4 border-b rounded-t dark:border-gray-600"
             >
@@ -61,7 +58,6 @@
                 <span class="sr-only">Close modal</span>
               </button>
             </div>
-            <!-- Modal body -->
             <form class="p-4 modal-form">
               <div class="name-input">
                 <label for="name">Ф.И.О.</label>
@@ -99,7 +95,7 @@
             </form>
           </div>
         </div>
-      </div>
+      </div> -->
 
       <!-- end modal -->
 
@@ -108,14 +104,29 @@
         class="logo-stroke"
         alt="logo-stroke"
       />
+      <img src="images\shadow.png" alt="shadow" class="shadow" />
       <div class="container">
         <nav>
           <a href="#"><img src="images/Group 2.svg" alt="uic-logo" /></a>
-          <div class="nav__link">
-            <a href="#">Маркет</a>
-            <a href="#">Цены</a>
-            <a href="tel:+998712007007">+998 71 <span>200 70 07</span></a>
-          </div>
+          <ul class="nav__link">
+            <li class="nav__link-item"><a href="#">Маркет</a></li>
+            <li class="nav__link-item"><a href="#">Цены</a></li>
+            <li class="nav__link-item">
+              <a href="tel:+998712007007">+998 71 <span>200 70 07</span></a>
+            </li>
+
+            <li>
+              <select name="lan" class="language-switcher">
+                <option value="english">
+                  <img src="images\Vectorlan.svg" alt="" /> en
+                </option>
+                <option value="russian" selected>
+                  <span><i class="fas fa-star"></i></span> ru
+                </option>
+                <option value="uzbek">uz</option>
+              </select>
+            </li>
+          </ul>
         </nav>
         <div class="intro">
           <h1>uic.market - готовые решения</h1>
@@ -128,11 +139,21 @@
               data-modal-target="defaultModal"
               data-modal-toggle="defaultModal"
             >
-              Оставить заявку
+              <span>Оставить заявку</span>
+              <i class="fas fa-arrow-right"></i>
             </button>
-            <a href="tel:+998712007007">Позвонить</a>
+            <a href="tel:+998712007007"
+              ><span>Позвонить</span> <i class="fas fa-phone-volume"></i
+            ></a>
           </div>
         </div>
+      </div>
+      <div class="mouse">
+        <img src="images/mouse-alt-3miuse.svg" alt="mouse-icon" />
+        <p>
+          Scroll for <br />
+          more
+        </p>
       </div>
     </header>
     <section class="about">
@@ -152,6 +173,11 @@
               веб-сайтов и приложений
             </p>
             <img src="images\Group 427318669.png" alt="korzinka" />
+            <img
+              src="images\Ellipse 1214main-card-shadow.png"
+              alt="elipse"
+              class="ellipse"
+            />
           </div>
           <div class="project-info">
             <div class="info">
@@ -173,8 +199,16 @@
               <p>Разработка интеллектуально-компьютерных систем</p>
             </div>
             <div class="btn-group">
-              <button>Оставить заявку</button>
-              <a href="tel:+998712007007">Позвонить</a>
+              <button
+                data-modal-target="defaultModal"
+                data-modal-toggle="defaultModal"
+              >
+                <span>Оставить заявку</span>
+                <i class="fas fa-arrow-right"></i>
+              </button>
+              <a href="tel:+998712007007"
+                ><span>Позвонить</span> <i class="fas fa-phone-volume"></i
+              ></a>
             </div>
           </div>
         </div>
@@ -189,17 +223,44 @@
               Возможность предлагать другие хорошие продукты, похожие на
               продукт, который клиент просматривает в данный момент.
             </p>
-            <img src="images\2Group 427318670.png" alt="korzinka" />
+            <img
+              src="images\2Group 427318670.png"
+              alt="korzinka"
+              class="card-img"
+            />
+            <img
+              src="images\Ellipse 1212card-shadow-rwhite.png"
+              alt="card-ellipse"
+              class="card-ellipse"
+            />
           </div>
           <div class="card-2 card">
             <h2>готовое seo</h2>
             <p>Страницы интернет-магазина полностью индексируются</p>
-            <img src="images\3Group 427318670.png" alt="korzinka" />
+            <img
+              src="images\3Group 427318670.png"
+              alt="korzinka"
+              class="card-img"
+            />
+            <img
+              src="images\Ellipse 1212card-shadow-rwhite.png"
+              alt="card-ellipse"
+              class="card-ellipse"
+            />
           </div>
           <div class="card-3 card">
             <h2>поддержка с очередью</h2>
             <p>Возможность поддержки клиента через систему Ticket</p>
-            <img src="images\Group 427318670.png" alt="korzinka" />
+            <img
+              src="images\Group 427318670.png"
+              alt="korzinka"
+              class="card-img"
+            />
+            <img
+              src="images\Ellipse 1212card-shadow-rwhite.png"
+              alt="card-ellipse"
+              class="card-ellipse"
+            />
           </div>
           <div class="card-4 card">
             <h2>Купить продукт</h2>
@@ -211,74 +272,301 @@
             <img
               src="images\1iPhone 12 Pro (Wooden Hands).png"
               alt="korzinka"
+              class="card-img"
             />
           </div>
-          <div class="card-5 card bg-blue-500">
+          <div class="card-5 card">
             <h2>уведомления</h2>
             <p>
-              10 лет беспрерывного опыта амбициозной команды в разработке
-              веб-сайтов и приложений
+              Возможность отправки уведомлений пользователям на общий или
+              индивидуальный сайт, на себя и по электронной почте.
             </p>
-            <img src="images\gGroup 427318670.png" alt="korzinka" />
+            <img
+              src="images\gGroup 427318670.png"
+              alt="korzinka"
+              class="card-img"
+            />
           </div>
-          <div class="card-6 card bg-gray-300">
-            <h2>оплата через карты/h2>
+          <div class="card-6 card">
+            <h2>оплата через карты</h2>
             <p>
               10 лет беспрерывного опыта амбициозной команды в разработке
               веб-сайтов и приложений
             </p>
-            <img src="images\Group 427318669.png" alt="korzinka" />
+            <img
+              src="images\Group 427318670payment-img.png"
+              alt="payment"
+              class="card-img"
+            />
           </div>
-          <div class="card-7 card bg-green-500">
-            <h2>Проекты под ключ</h2>
+          <div class="card-7 card">
+            <h2>Мобильное приложение</h2>
             <p>
-              10 лет беспрерывного опыта амбициозной команды в разработке
-              веб-сайтов и приложений
+              Приложения iOS/Android для мобильных пользователей всех функций,
+              доступных на сайте
             </p>
-            <img src="images\Group 427318669.png" alt="korzinka" />
+            <div class="mobil-apps">
+              <a href="#"
+                ><img src="images\Frame 38146google-play.svg" alt="google-play"
+              /></a>
+              <a href="#"
+                ><img src="images\Frame 38147app-store.svg" alt="app-store"
+              /></a>
+            </div>
+            <img
+              src="images\iPhone 12 Pro (Wooden Hands)12pro.png"
+              alt="mobilapp"
+              class="card-img"
+            />
           </div>
-          <div class="card-8 card bg-red-300">
-            <h2>Проекты под ключ</h2>
+          <div class="card-8 card">
+            <h2>Telegram bot ecommerce</h2>
             <p>
-              10 лет беспрерывного опыта амбициозной команды в разработке
-              веб-сайтов и приложений
+              Теперь у вас будет возможность продавать товары в своем
+              интернет-магазине через Telegram бота
             </p>
-            <img src="images\Group 427318669.png" alt="korzinka" />
+            <img
+              src="images\TEL2OctDenoiserBeauty_002 copy.png"
+              alt="Telegram"
+              class="card-img"
+            />
           </div>
           <div class="card-9 card bg-purple-300">
-            <h2>Проекты под ключ</h2>
+            <h2>Smartsearch.uz</h2>
             <p>
-              10 лет беспрерывного опыта амбициозной команды в разработке
-              веб-сайтов и приложений
+              Возможность интегрировать сервис простого поиска товара через
+              умную и быструю систему поиска
             </p>
-            <img src="images\Group 427318669.png" alt="korzinka" />
+            <img
+              src="images\Group 427318670search-img.png"
+              alt="korzinka"
+              class="card-img"
+            />
           </div>
-          <div class="card-10 card bg-blue-600">
-            <h2>Проекты под ключ</h2>
+          <div class="card-10 card">
+            <h2>delivery app</h2>
             <p>
-              10 лет беспрерывного опыта амбициозной команды в разработке
-              веб-сайтов и приложений
+              Мобильное приложение сотрудников, доставляющих товары, купленные
+              через магазин.
             </p>
-            <img src="images\Group 427318669.png" alt="korzinka" />
+            <img
+              src="images\iPhone 12 Pro (Wooden Hands)12-pro-max.png"
+              alt="korzinka"
+              class="card-img"
+            />
           </div>
-          <div class="card-11 card bg-yellow-500">
-            <h2>Проекты под ключ</h2>
+          <div class="card-11 card">
+            <h2>Оплата Visa/Mastercard</h2>
             <p>
-              10 лет беспрерывного опыта амбициозной команды в разработке
-              веб-сайтов и приложений
+              Возможность совершать платежи за границу при предоставлении
+              достаточной комплексной информации
             </p>
-            <img src="images\Group 427318669.png" alt="korzinka" />
+            <img
+              src="images\Group 427318670oplaata.png"
+              alt="korzinka"
+              class="card-img"
+            />
           </div>
           <div class="card-12 card bg-red-700">
-            <h2>Проекты под ключ</h2>
+            <h2>Склад</h2>
             <p>
-              10 лет беспрерывного опыта амбициозной команды в разработке
-              веб-сайтов и приложений
+              Через модуль склада вы сможете управлять несколькими существующими
+              складами и импортировать/экспортировать на них товары.
             </p>
-            <img src="images\Group 427318669.png" alt="korzinka" />
+            <img
+              src="images\Group 427318670sklad.png"
+              alt="korzinka"
+              class="card-img"
+            />
+          </div>
+        </div>
+        <div class="btn-group">
+          <button
+            data-modal-target="defaultModal"
+            data-modal-toggle="defaultModal"
+          >
+            <span>Оставить заявку</span>
+            <i class="fas fa-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+    <section class="price">
+      <div class="container">
+        <div class="title">
+          <h2>Цены и тарифы</h2>
+          <p>
+            У вас будет возможность ознакомиться с товарами и увидеть их через
+            каталог товаров
+          </p>
+        </div>
+        <div class="price__Cards">
+          <div class="price__cards-item">
+            <div class="card-info">
+              <h3 class="card-plan">Start</h3>
+              <p class="card-descr">
+                Страницы интернет-магазина полностью индексируются
+              </p>
+              <p class="card-price">1 850 000 UZS</p>
+            </div>
+            <ul class="card-list">
+              <p class="card-list-title">План включает:</p>
+              <li>
+                <i class="fas fa-check"></i> <span>Разработка сайта</span>
+              </li>
+              <li><i class="fas fa-check"></i> <span>200 продуктов</span></li>
+              <li>
+                <i class="fas fa-check"></i> <span>Каталог и категории</span>
+              </li>
+              <li><i class="fas fa-check"></i> <span>Поиск</span></li>
+              <li><i class="fas fa-check"></i> <span>Обратная связь</span></li>
+            </ul>
+          </div>
+          <div class="price__cards-item">
+            <div class="card-info">
+              <h3 class="card-plan">pro</h3>
+              <p class="card-descr">
+                Страницы интернет-магазина полностью индексируются
+              </p>
+              <p class="card-price">По соглашению</p>
+            </div>
+            <ul class="card-list">
+              <p class="card-list-title">План включает:</p>
+              <li>
+                <i class="fas fa-check"></i> <span>Разработка сайта</span>
+              </li>
+              <li><i class="fas fa-check"></i> <span>200 продуктов</span></li>
+              <li>
+                <i class="fas fa-check"></i> <span>Каталог и категории</span>
+              </li>
+              <li><i class="fas fa-check"></i> <span>Поиск</span></li>
+              <li><i class="fas fa-check"></i> <span>Обратная связь</span></li>
+            </ul>
+          </div>
+          <div class="price__cards-item">
+            <div class="card-info">
+              <h3 class="card-plan">premium</h3>
+              <p class="card-descr">
+                Страницы интернет-магазина полностью индексируются
+              </p>
+              <p class="card-price">По соглашению</p>
+            </div>
+            <ul class="card-list">
+              <p class="card-list-title">План включает:</p>
+              <li>
+                <i class="fas fa-check"></i> <span>Разработка сайта</span>
+              </li>
+              <li><i class="fas fa-check"></i> <span>200 продуктов</span></li>
+              <li>
+                <i class="fas fa-check"></i> <span>Каталог и категории</span>
+              </li>
+              <li><i class="fas fa-check"></i> <span>Поиск</span></li>
+              <li><i class="fas fa-check"></i> <span>Обратная связь</span></li>
+            </ul>
+          </div>
+          <div class="price__cards-item">
+            <div class="card-info">
+              <h3 class="card-plan">king</h3>
+              <p class="card-descr">
+                Страницы интернет-магазина полностью индексируются
+              </p>
+              <p class="card-price">По соглашению</p>
+            </div>
+            <ul class="card-list">
+              <p class="card-list-title">План включает:</p>
+              <li>
+                <i class="fas fa-check"></i> <span>Разработка сайта</span>
+              </li>
+              <li><i class="fas fa-check"></i> <span>200 продуктов</span></li>
+              <li>
+                <i class="fas fa-check"></i> <span>Каталог и категории</span>
+              </li>
+              <li><i class="fas fa-check"></i> <span>Поиск</span></li>
+              <li><i class="fas fa-check"></i> <span>Обратная связь</span></li>
+            </ul>
+          </div>
+          <div class="price__cards-item">
+            <div class="card-info">
+              <h3 class="card-plan">Enterprise</h3>
+              <p class="card-descr">
+                Страницы интернет-магазина полностью индексируются
+              </p>
+              <p class="card-price">По соглашению</p>
+            </div>
+            <ul class="card-list">
+              <p class="card-list-title">План включает:</p>
+              <li>
+                <i class="fas fa-check"></i> <span>Разработка сайта</span>
+              </li>
+              <li><i class="fas fa-check"></i> <span>200 продуктов</span></li>
+              <li>
+                <i class="fas fa-check"></i> <span>Каталог и категории</span>
+              </li>
+              <li><i class="fas fa-check"></i> <span>Поиск</span></li>
+              <li><i class="fas fa-check"></i> <span>Обратная связь</span></li>
+            </ul>
+          </div>
+        </div>
+        <div class="btn-group">
+          <a href="tel:+998712007007"
+            ><span>Подробно о функции</span> <i class="fas fa-arrow-right"></i
+          ></a>
+        </div>
+      </div>
+    </section>
+    <section class="partners">
+      <div class="md-container">
+        <div class="title">
+          <p>партнеры</p>
+          <h2>Компании, которые нам доверяют</h2>
+        </div>
+        <div class="partners__cards">
+          <div class="partners__cards-item">
+            <img src="images\g4252.svg" alt="" />
+          </div>
+          <div class="partners__cards-item">
+            <img src="images\Layer1000.svg" alt="" />
+          </div>
+          <div class="partners__cards-item">
+            <img src="images\Layer 1-2payme.svg" alt="" />
+          </div>
+          <div class="partners__cards-item">
+            <img src="images\Home pagespace.svg" alt="" />
+          </div>
+          <div class="partners__cards-item">
+            <img src="images\a012f93ffavtech.svg" alt="" />
           </div>
         </div>
       </div>
     </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="contact">
+          <div class="social">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-telegram"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+          <div class="email">
+            <a href="#"><i class="fas fa-at"></i> info@uic.group</a>
+            <a href="#"
+              ><i class="fas fa-phone-volume"></i> +998 71 200 70 07</a
+            >
+          </div>
+        </div>
+        <div class="address">
+          <p>© 2021 UIC.group</p>
+          <div class="location">
+            <p>
+              <i class="fa-solid fa-map-location-dot"></i> г. Ташкент,
+              Мирабадский р-н, ул. Фидокор 8
+            </p>
+            <button>на карте</button>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
